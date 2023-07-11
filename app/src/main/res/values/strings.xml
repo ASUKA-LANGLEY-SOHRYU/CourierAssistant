@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">CourierAssistant</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragmentTest</string>
+    <string name="login">Войти</string>
+    <string name="registration">Регистрация</string>
+    <string name="hint">Войдите в аккаунт, если вы действующий курьер, или зарегистрируйтесь, если хотите им стать</string>
+    <string name="hint_field">Номер телефона</string>
+    <string name="hint_main">Для входа введите свой номер телефона</string>
+    <string name="hint_second">Мы отправим на него СМС с кодом подтверждения</string>
+    <string name="h1">Вход</string>
+    <string name="title_orders">Мои заказы</string>
+    <string name="title_available">Доступные заказы</string>
+    <string name="title_profile">Профиль курьера</string>
+    <string name="main_fragment">mainFragmentStringTEST</string>
+    <string name="courier_rating">4.45</string>
+    <string name="courier_profile">Профиль курьера</string>
+    <string name="courier_counter">33</string>
 </resources>

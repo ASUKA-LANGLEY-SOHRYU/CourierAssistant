@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/ordersFragment"
+            android:title="@string/title_orders"/>
+
+
+    <item
+            android:id="@+id/availableFragment"
+            android:title="@string/title_available"/>
+
+    <item
+            android:id="@+id/profileFragment"
+            android:title="@string/title_profile"/>
+</menu>
