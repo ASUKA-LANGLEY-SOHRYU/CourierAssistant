@@ -2,7 +2,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/nav_graph"
-            app:startDestination="@id/startFragment">
+            app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/startFragment"
@@ -27,5 +27,13 @@
         android:id="@+id/registrationFragment"
         android:name="com.michael.courierassistant.presenter.ui.RegistrationFragment"
         android:label="RegistrationFragment" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.michael.courierassistant.presenter.ui.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
 </navigation>
 
