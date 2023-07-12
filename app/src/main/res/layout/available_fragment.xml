@@ -32,6 +32,83 @@
             app:layout_constraintTop_toTopOf="@id/header_title"
             />
 
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_order"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="35dp"
+
+            app:cardCornerRadius="12dp"
+            app:strokeColor="@color/orange"
+            app:strokeWidth="1dp"
+
+            android:background="@drawable/round_corner_solid"
+
+            app:layout_constraintStart_toStartOf="@id/header_title"
+            app:layout_constraintTop_toBottomOf="@id/header_title">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|start"
+
+                android:text="Доставить до 12:33"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:lineHeight="24dp"
+                android:textFontWeight="500"
+                android:textColor="@color/black"
+
+                />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+
+                android:text="Заказ №1234"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:lineHeight="24dp"
+                android:textFontWeight="500"
+                android:textColor="@color/black"
+
+                />
+        <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|start"
+
+                android:text="Екатеринбург, Ленина ул., 10"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:lineHeight="16.8dp"
+                android:textFontWeight="400"
+                android:textColor="@color/black"
+                />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="Взять в работу"
+                android:id="@+id/button_login"
+
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_corner_gradient"
+
+                app:layout_constraintTop_toBottomOf="@id/address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+        
+
+
+    </com.google.android.material.card.MaterialCardView>
+
 
 
 
