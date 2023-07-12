@@ -11,12 +11,12 @@ import com.michael.courierassistant.databinding.FragmentMainBinding
 
 class MainFragment : Fragment(R.layout.fragment_main) {
 
-    private var _binding: FragmentMainBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentMainBinding
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        _binding = FragmentMainBinding.bind(view)
+        binding = FragmentMainBinding.bind(view)
 
         val bottomNavigationView = binding.mainBottomNavigationView
         val navController = (childFragmentManager.findFragmentById(R.id.mainContainerView) as NavHostFragment).navController

@@ -32,18 +32,10 @@
     <fragment
             android:id="@+id/registrationFragment"
             android:name="com.michael.courierassistant.presenter.ui.screens.RegistrationFragment"
-            android:label="RegistrationFragment">
-        <action
-                android:id="@+id/action_registrationFragment_to_cityFragment2"
-                app:destination="@id/cityFragment"/>
-    </fragment>
+            android:label="RegistrationFragment"/>
     <fragment
             android:id="@+id/mainFragment"
             android:name="com.michael.courierassistant.presenter.ui.MainFragment"
             android:label="MainFragment"/>
-    <fragment
-            android:id="@+id/cityFragment"
-            android:name="com.michael.courierassistant.presenter.ui.screens.CityFragment"
-            android:label="CityFragment"/>
 </navigation>
 
