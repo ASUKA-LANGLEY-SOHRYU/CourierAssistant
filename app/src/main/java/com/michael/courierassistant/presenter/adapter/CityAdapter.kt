@@ -1,31 +1,29 @@
-package com.michael.courierassistant.presenter.adapter
-
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.michael.courierassistant.R
-import com.michael.courierassistant.presenter.model.City
-
+import com.michael.courierassistant.databinding.ItemCityBinding
+import com.michael.courierassistant.presenter.ui.City
 
 class CityAdapter(private val cities: List<City>) : RecyclerView.Adapter<CityAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_city, parent, false)
-        return ViewHolder(view)
+        val binding = ItemCityBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val city = cities[position]
-        holder.cityNameTextView.text = city.name
+        holder.bind(city)
     }
 
     override fun getItemCount(): Int {
         return cities.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val cityNameTextView: TextView = itemView.findViewById(R.id.cityNameTextView)
+    inner class ViewHolder(private val binding: ItemCityBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(city: City) {
+            binding.cityNameTextView.text = city.name
+        }
     }
 }
