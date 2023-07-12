@@ -23,12 +23,12 @@
     <!--    Login-->
     <fragment
             android:id="@+id/loginFragment"
-            android:name="com.michael.courierassistant.presenter.ui.screens.LoginFragment"
+            android:name="com.michael.courierassistant.presenter.ui.LoginFragment"
             android:label="LoginFragment"/>
 
     <fragment
             android:id="@+id/registrationFragment"
-            android:name="com.michael.courierassistant.presenter.ui.screens.RegistrationFragment"
+            android:name="com.michael.courierassistant.presenter.ui.RegistrationFragment"
             android:label="RegistrationFragment"/>
 </navigation>
 

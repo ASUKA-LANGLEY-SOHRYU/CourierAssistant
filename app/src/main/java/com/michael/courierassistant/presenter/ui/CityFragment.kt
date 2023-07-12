@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.michael.courierassistant.R
+import com.michael.courierassistant.presenter.adapter.CityAdapter
+import com.michael.courierassistant.presenter.model.City
 
 
 class CityFragment : AppCompatActivity() {
@@ -20,7 +22,6 @@ class CityFragment : AppCompatActivity() {
             City("Санкт-Петербург"),
             City("Екатеринбург"),
             City("Казань"),
-
             )
 
         val adapter = CityAdapter(cities)
