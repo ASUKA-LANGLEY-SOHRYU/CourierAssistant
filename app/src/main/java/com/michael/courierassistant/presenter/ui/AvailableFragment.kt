@@ -1,11 +1,11 @@
-package com.michael.courierassistant.presenter.ui.screens
+package com.michael.courierassistant.presenter.ui
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.michael.courierassistant.R
 
-class CityFragment : Fragment(R.layout.city_select) {
+class AvailableFragment : Fragment(R.layout.available_fragment) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

@@ -25,7 +25,7 @@
 
             <meta-data
                 android:name="android.app.lib_name"
-                android:value="" />
+                android:value="g" />
         </activity>
     </application>
 

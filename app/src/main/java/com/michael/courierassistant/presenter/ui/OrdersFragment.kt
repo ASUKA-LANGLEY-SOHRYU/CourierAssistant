@@ -1,4 +1,4 @@
-package com.michael.courierassistant.presenter.ui.screens
+package com.michael.courierassistant.presenter.ui
 
 import android.os.Bundle
 import android.view.View
