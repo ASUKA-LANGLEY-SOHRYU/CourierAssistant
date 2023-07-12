@@ -22,6 +22,17 @@
             android:textStyle="bold"
             android:textSize="20sp"/>
 
+    <ImageView
+            android:id="@+id/support_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/support_pic"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/header_title"
+            app:layout_constraintTop_toTopOf="@id/header_title"
+            />
+
 
     <androidx.cardview.widget.CardView
             android:id="@+id/profile_picture"
@@ -41,10 +52,9 @@
                 android:layout_gravity="center">
 
             <ImageView
-                    android:layout_width="76dp"
-                    android:layout_height="76dp"
-                    tools:srcCompat="@tools:sample/avatars"
-                    android:scaleType="centerCrop"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profile_pic"/>
 
         </androidx.cardview.widget.CardView>
 
