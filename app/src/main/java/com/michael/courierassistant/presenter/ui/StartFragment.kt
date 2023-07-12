@@ -19,16 +19,12 @@ class StartFragment : Fragment(R.layout.start_fragment) {
 
         val loginButton: Button = binding.buttonLogin
         val registrationButton: Button = binding.buttonRegistration
-        val mainButton: Button = binding.buttonMain
 
         loginButton.setOnClickListener {
             findNavController().navigate(R.id.loginFragment)
         }
         registrationButton.setOnClickListener {
             findNavController().navigate(R.id.registrationFragment)
-        }
-        mainButton.setOnClickListener {
-            findNavController().navigate(R.id.mainFragment)
         }
 
     }

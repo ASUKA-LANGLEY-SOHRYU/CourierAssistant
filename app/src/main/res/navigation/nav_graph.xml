@@ -5,30 +5,27 @@
             app:startDestination="@id/startFragment">
 
     <fragment
-            android:id="@+id/startFragment"
-            android:name="com.michael.courierassistant.presenter.ui.MainFragment"
-            android:label="StartFragment"
-            >
+        android:id="@+id/startFragment"
+        android:name="com.michael.courierassistant.presenter.ui.StartFragment"
+        android:label="StartFragment">
         <action
-                android:id="@+id/action_startFragment_to_loginFragment"
-                app:destination="@id/loginFragment"
-                />
+            android:id="@+id/action_startFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
         <action
-                android:id="@+id/action_startFragment_to_registrationFragment"
-                app:destination="@id/registrationFragment"
-                />
+            android:id="@+id/action_startFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
 
     </fragment>
 
     <!--    Login-->
     <fragment
-            android:id="@+id/loginFragment"
-            android:name="com.michael.courierassistant.presenter.ui.screens.LoginFragment"
-            android:label="LoginFragment"/>
+        android:id="@+id/loginFragment"
+        android:name="com.michael.courierassistant.presenter.ui.LoginFragment"
+        android:label="LoginFragment" />
 
     <fragment
-            android:id="@+id/registrationFragment"
-            android:name="com.michael.courierassistant.presenter.ui.screens.RegistrationFragment"
-            android:label="RegistrationFragment"/>
+        android:id="@+id/registrationFragment"
+        android:name="com.michael.courierassistant.presenter.ui.RegistrationFragment"
+        android:label="RegistrationFragment" />
 </navigation>
 
