@@ -1,0 +1,6 @@
+package com.michael.courierassistant.domain.model
+
+data class User(
+    val id: Int,
+    val name: String
+)
