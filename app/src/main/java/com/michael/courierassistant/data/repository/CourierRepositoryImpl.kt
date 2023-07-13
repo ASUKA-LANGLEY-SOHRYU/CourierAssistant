@@ -3,6 +3,7 @@ package com.michael.courierassistant.data.repository
 import com.michael.courierassistant.data.datasource.OrdersHelper
 import com.michael.courierassistant.data.model.mapper.OrderApiMapper
 import com.michael.courierassistant.domain.model.Order
+import com.michael.courierassistant.domain.model.OrderStatus
 import com.michael.courierassistant.domain.model.User
 import com.michael.courierassistant.domain.model.UserRegistrationModel
 import com.michael.courierassistant.domain.repository.ICourierRepository
@@ -26,12 +27,12 @@ class CourierRepositoryImpl(
     }
 
     override fun takeOrder(orderId: Int): Completable {
+        ordersHelper.changeStatus(orderId.toString(), OrderStatus.Taken)
         return Completable.complete()
-        //TODO("Not yet implemented")
     }
 
     override fun closeOrder(orderId: Int): Completable {
+        ordersHelper.changeStatus(orderId.toString(), OrderStatus.Delivered)
         return Completable.complete()
-        //TODO("Not yet implemented")
     }
 }

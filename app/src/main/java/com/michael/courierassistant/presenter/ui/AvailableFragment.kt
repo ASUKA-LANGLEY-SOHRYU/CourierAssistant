@@ -36,11 +36,18 @@ class AvailableFragment : Fragment() {
         observeLiveData()
     }
 
+    override fun onResume() {
+        super.onResume()
+        vm.fetchData()
+
+    }
+
     private fun initRecyclerView(){
         adapter = OrdersListAdapter()
         adapter.setOnButtonClickListener(object : OrdersListAdapter.OnButtonClickListener{
             override fun onButtonClick(position: Int) {
-                //TODO("Not yet implemented")
+                vm.onListItemButtonClick(position)
+                adapter.deleteOrder(position)
             }
         })
         binding.recyclerView.adapter = adapter
@@ -50,7 +57,6 @@ class AvailableFragment : Fragment() {
     private fun observeLiveData(){
         vm.orders.observe(viewLifecycleOwner){
             adapter.setOrders(it)
-            Log.e("ABCCBA", adapter.itemCount.toString())
         }
     }
 

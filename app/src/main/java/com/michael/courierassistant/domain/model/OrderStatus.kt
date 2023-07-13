@@ -1,4 +1,4 @@
-package com.michael.courierassistant.presenter.model
+package com.michael.courierassistant.domain.model
 
 enum class OrderStatus(val status: String) {
     Taken("Забрал заказ"),

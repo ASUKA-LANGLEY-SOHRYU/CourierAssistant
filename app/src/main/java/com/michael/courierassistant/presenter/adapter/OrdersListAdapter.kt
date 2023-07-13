@@ -19,6 +19,11 @@ class OrdersListAdapter: RecyclerView.Adapter<OrdersListAdapter.OrdersListViewHo
         notifyDataSetChanged()
     }
 
+    fun deleteOrder(position: Int){
+        this.orders.removeAt(position)
+        notifyItemRemoved(position)
+    }
+
     private lateinit var onButtonClickListener: OnButtonClickListener
 
     interface OnButtonClickListener {

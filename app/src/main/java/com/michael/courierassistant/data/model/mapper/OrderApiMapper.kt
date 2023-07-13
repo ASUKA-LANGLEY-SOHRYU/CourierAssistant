@@ -11,6 +11,7 @@ class OrderApiMapper: IMapper<OrderApiModel, Order> {
             input.address,
             input.comment,
             input.maxTime,
+            input.status
         )
     }
 }

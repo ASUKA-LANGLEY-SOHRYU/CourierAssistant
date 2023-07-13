@@ -5,4 +5,5 @@ data class Order(
     val address: String,
     val comment: String,
     val maxTime: String,
+    val status: OrderStatus
 )
