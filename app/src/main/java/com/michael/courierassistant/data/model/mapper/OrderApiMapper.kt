@@ -10,10 +10,7 @@ class OrderApiMapper: IMapper<OrderApiModel, Order> {
             input.id,
             input.address,
             input.comment,
-            input.customer,
             input.maxTime,
-            input.price,
-            input.products
         )
     }
 }
